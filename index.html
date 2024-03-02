@@ -26,8 +26,8 @@
     <div class="hero">
         <div class="hero-section">
             <div class="search-bar">
-                <input class="search" type="text" placeholder="Find your location...">
-                <button class="submit">Find</button>
+                <input id="country" class="search" type="text" placeholder="Find your location...">
+                <button id="submit-btn" class="submit">Find</button>
             </div>
         </div> 
         <div class="forecast-table">
@@ -35,13 +35,16 @@
                 <div class="forecast-container">
                     <div class="today-forecast">
                         <div class="forecast-header">
-                            <div class="day">Monday</div>
-                            <div class="date">6 oct</div>
+                            <div class="day">
+                                <p id="today">Monday</p>
+                            </div>
+                            <div id="month" class="date">oct</div>
+                            <div id="date" class="date">6</div>
                         </div>
                         <div class="forecast-content">
-                            <div class="location">New York</div>
+                            <div id="location" class="location">New York</div>
                             <div class="degree">
-                                <div class="num">
+                                <div id="temp-today" class="num">
                                     23
                                     <sup class="today-degree">o</sup>
                                     C
@@ -56,14 +59,14 @@
     
                     <div class="nextday-forecast">
                         <div class="nextday-forecast-header">
-                            <div class="nextday-day">Tuesday</div>
+                            <div id="second-day" class="nextday-day">Tuesday</div>
                         </div>
                         <div class="nextday-forecast-content">
                             <div class="nextday-forecast-icon">
                                 <img src="icon-2.svg" alt="clould">
                             </div>
                             <div class="nextday-degree">
-                                <div class="nextday-num">
+                                <div id="temp-secondDay" class="nextday-num">
                                     23
                                     <sup class="nextday-degree-cal">o</sup>
                                     C
@@ -75,14 +78,14 @@
     
                     <div class="nextday-forecast">
                         <div class="nextday1-forecast-header">
-                            <div class="nextday-day">Wednesday</div>
+                            <div id="third-day" class="nextday-day">Wednesday</div>
                         </div>
                         <div class="nextday1-forecast-content">
                             <div class="nextday-forecast-icon">
                                 <img src="icon-2.svg" alt="clould">
                             </div>
                             <div class="nextday-degree">
-                                <div class="nextday-num">
+                                <div id="temp-thirdDay" class="nextday-num">
                                     23
                                     <sup class="nextday-degree-cal">o</sup>
                                     C
@@ -94,14 +97,14 @@
     
                     <div class="nextday-forecast">
                         <div class="nextday-forecast-header">
-                            <div class="nextday-day">Thrusday</div>
+                            <div id="fouth-day" class="nextday-day">Thrusday</div>
                         </div>
                         <div class="nextday-forecast-content">
                             <div class="nextday-forecast-icon">
                                 <img src="icon-2.svg" alt="clould">
                             </div>
                             <div class="nextday-degree">
-                                <div class="nextday-num">
+                                <div id="temp-fouthday" class="nextday-num">
                                     23
                                     <sup class="nextday-degree-cal">o</sup>
                                     C
@@ -113,14 +116,14 @@
     
                     <div class="nextday-forecast">
                         <div class="nextday1-forecast-header">
-                            <div class="nextday-day">Friday</div>
+                            <div id="fifth-day" class="nextday-day">Friday</div>
                         </div>
                         <div class="nextday1-forecast-content">
                             <div class="nextday-forecast-icon">
                                 <img src="icon-2.svg" alt="clould">
                             </div>
                             <div class="nextday-degree">
-                                <div class="nextday-num">
+                                <div id="temp-fifthday" class="nextday-num">
                                     23
                                     <sup class="nextday-degree-cal">o</sup>
                                     C
@@ -131,14 +134,14 @@
     
                     <div class="nextday-forecast">
                         <div class="nextday-forecast-header">
-                            <div class="nextday-day">Saturday</div>
+                            <div id="sixth-day" class="nextday-day">Saturday</div>
                         </div>
                         <div class="nextday-forecast-content">
                             <div class="nextday-forecast-icon">
                                 <img src="icon-2.svg" alt="clould">
                             </div>
                             <div class="nextday-degree">
-                                <div class="nextday-num">
+                                <div id="temp-sixthday" class="nextday-num">
                                     23
                                     <sup class="nextday-degree-cal">o</sup>
                                     C
@@ -150,14 +153,14 @@
     
                     <div class="nextday-forecast">
                         <div class="nextday1-forecast-header" style="border-top-right-radius: 25px;">
-                            <div class="nextday-day">Sunday</div>
+                            <div id="seventh-day" class="nextday-day">Sunday</div>
                         </div>
                         <div class="nextday1-forecast-content" style="border-bottom-right-radius: 25px;">
                             <div class="nextday-forecast-icon">
                                 <img src="icon-2.svg" alt="clould">
                             </div>
                             <div class="nextday-degree">
-                                <div class="nextday-num">
+                                <div id="temp-seventhday" class="nextday-num">
                                     23
                                     <sup class="nextday-degree-cal">o</sup>
                                     C
@@ -315,6 +318,6 @@
             <a href="#" class="fa fa-pinterest"></a>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
