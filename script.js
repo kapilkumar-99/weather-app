@@ -9,7 +9,7 @@ document.getElementById('country').value = "";
 function defaultLocation(){
     const countryLocation = "Karachi";
 
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${countryLocation}&units=metric&appid=a12ebfe78f12f11bf6352606b3e4d54c`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${countryLocation}&units=metric&appid=a12ebfe78f12f11bf6352606b3e4d54c`)
 .then(response => response.json())
 .then (data => {
 
@@ -137,7 +137,7 @@ find.addEventListener('click', function(){
     const area = document.getElementById('country');
     const country = area.value;
     const countryLocation = country;
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${countryLocation}&units=metric&appid=a12ebfe78f12f11bf6352606b3e4d54c`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${countryLocation}&units=metric&appid=a12ebfe78f12f11bf6352606b3e4d54c`)
     .then(response => response.json())
     .then (data => {
 
